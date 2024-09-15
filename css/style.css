@@ -84,23 +84,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: 'DuneRise'; /* Name for the font */
+  src:
+  /*url('fonts/dune_rise/Dune_Rise.otf') format('svg'), !* Add other formats as needed *!*/
+  /*url('fonts/dune_rise/Dune_Rise.ttf') format('truetype'),*/
+  /*url('fonts/dune_rise/Dune_Rise.woff') format('woff');*/
+  font-weight: normal; /* Specify the weight */
+  font-style: normal; /* Specify the style */
+}
 
 .background {
   background-color: #5D372F;
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.sideBar {
+  background-color: #ffffff;
 }
 
 .mainBody {
-  background-color: #5D372F;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5D372F;
+
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.mainText {
-  background-color: #5D372F;
+.mainBody>* {
+  margin: 20px 0;
+}
+
+.mainImage {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
 }
 
 h1 {
   color: #E7AE4F;
+  font-size: 3em;
+  font-family: "DuneRise", sans-serif;
+}
+
+.mainText {
+  text-align: center;
+  color: #F7F6EA;
 }
 
 /* ==========================================================================
