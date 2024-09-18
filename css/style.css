@@ -88,14 +88,14 @@ textarea {
   font-family: 'DuneRise'; /* Name for the font */
   src:
   /*url('fonts/dune_rise/Dune_Rise.otf') format('svg'), !* Add other formats as needed *!*/
-  /*url('fonts/dune_rise/Dune_Rise.ttf') format('truetype'),*/
-  /*url('fonts/dune_rise/Dune_Rise.woff') format('woff');*/
+  url('fonts/dune_rise/Dune_Rise.ttf') format('truetype'),
+  url('fonts/dune_rise/Dune_Rise.woff') format('woff');
   font-weight: normal; /* Specify the weight */
   font-style: normal; /* Specify the style */
 }
 
 .background {
-  background-color: #5D372F;
+  background-color: #A45F4F;
   display: flex;
   flex-direction: row;
   /*flex-wrap: wrap;*/
@@ -114,6 +114,8 @@ textarea {
   align-items: center;
   background-color: #5D372F;
 
+  width: 50%;
+
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -126,17 +128,30 @@ textarea {
   width: 25%;
   height: auto;
   border-radius: 50%;
+  margin: 0;
 }
 
-h1 {
+.title {
   color: #E7AE4F;
   font-size: 3em;
-  font-family: "DuneRise", sans-serif;
+  font-family: "DuneRise", serif;
 }
 
 .mainText {
   text-align: center;
   color: #F7F6EA;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  /*color: #5D372F;*/
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
 }
 
 /* ==========================================================================
