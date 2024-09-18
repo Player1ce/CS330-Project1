@@ -73,7 +73,7 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+ * Allow only vertical resizing of text areas.
  */
 
 textarea {
@@ -83,13 +83,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 @font-face {
-  font-family: 'DuneRise'; /* Name for the font */
   src:
-  /*url('fonts/dune_rise/Dune_Rise.otf') format('svg'), !* Add other formats as needed *!*/
-  url('fonts/dune_rise/Dune_Rise.ttf') format('truetype'),
-  url('fonts/dune_rise/Dune_Rise.woff') format('woff');
+    /*url('fonts/dune_rise/Dune_Rise.otf') format('svg'), !* Add other formats as needed *!*/
+    url('../fonts/dune_rise/Dune_Rise.ttf') format('truetype'),
+    url('../fonts/dune_rise/Dune_Rise.woff') format('woff');
+  font-family: DuneRise; /* Name for the font */
   font-weight: normal; /* Specify the weight */
   font-style: normal; /* Specify the style */
 }
@@ -101,10 +100,12 @@ textarea {
   /*flex-wrap: wrap;*/
   justify-content: space-between;
   align-items: stretch;
+  margin: 0;
 }
 
 .sideBar {
-  background-color: #ffffff;
+  background-color: #A45F4F;
+  width: 35vw;
 }
 
 .mainBody {
@@ -114,7 +115,7 @@ textarea {
   align-items: center;
   background-color: #5D372F;
 
-  width: 50%;
+  width: 99%;
 
   padding-left: 5%;
   padding-right: 5%;
@@ -125,16 +126,19 @@ textarea {
 }
 
 .mainImage {
-  width: 25%;
+  width: 40%;
   height: auto;
   border-radius: 50%;
   margin: 0;
 }
 
-.title {
+.headerText {
   color: #E7AE4F;
+  font-family: DuneRise, serif;
+}
+
+.title {
   font-size: 3em;
-  font-family: "DuneRise", serif;
 }
 
 .mainText {
